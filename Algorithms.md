@@ -1,5 +1,4 @@
 # Information Content Approaches
-# Information Content Approaches
 
 | Name          | Paper Link                                                                 | Data Structure | Formula | Complexity | 
 |---------------|----------------------------------------------------------------------------|----------------|---------|------------|
