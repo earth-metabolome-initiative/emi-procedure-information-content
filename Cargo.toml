@@ -4,3 +4,8 @@ version = "0.1.0"
 edition = "2024"
 
 [dependencies]
+algebra = {git="https://github.com/earth-metabolome-initiative/emi-monorepo/" ,branch = "main"}
+functional_properties = {git="https://github.com/earth-metabolome-initiative/emi-monorepo/" ,branch = "main"}
+graph = {git="https://github.com/earth-metabolome-initiative/emi-monorepo/" ,branch = "main"}
+num-traits = "0.2.19"
+numeric_common_traits = {git="https://github.com/earth-metabolome-initiative/emi-monorepo/" ,branch = "main"}

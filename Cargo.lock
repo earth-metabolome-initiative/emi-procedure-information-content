@@ -3,5 +3,211 @@
 version = 4
 
 [[package]]
+name = "algebra"
+version = "0.1.0"
+source = "git+https://github.com/earth-metabolome-initiative/emi-monorepo/?branch=main#b86a60b746c9caef16a6f8aa80a8292d35117ed9"
+dependencies = [
+ "arbitrary",
+ "common_traits",
+ "iter_utils",
+ "lender",
+ "multi_ranged",
+ "num-traits",
+ "numeric_common_traits",
+ "serde",
+]
+
+[[package]]
+name = "arbitrary"
+version = "1.4.2"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "c3d036a3c4ab069c7b410a2ce876bd74808d2d0888a82667669f8e783a898bf1"
+dependencies = [
+ "derive_arbitrary",
+]
+
+[[package]]
+name = "autocfg"
+version = "1.5.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "c08606f8c3cbf4ce6ec8e28fb0014a2c086708fe954eaa885384a6165172e7e8"
+
+[[package]]
+name = "common_traits"
+version = "0.1.0"
+source = "git+https://github.com/earth-metabolome-initiative/emi-monorepo/?branch=main#b86a60b746c9caef16a6f8aa80a8292d35117ed9"
+dependencies = [
+ "serde",
+]
+
+[[package]]
+name = "derive_arbitrary"
+version = "1.4.2"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "1e567bd82dcff979e4b03460c307b3cdc9e96fde3d73bed1496d2bc75d9dd62a"
+dependencies = [
+ "proc-macro2",
+ "quote",
+ "syn",
+]
+
+[[package]]
 name = "emi-procedure-information-content"
 version = "0.1.0"
+dependencies = [
+ "algebra",
+ "functional_properties",
+ "graph",
+ "num-traits",
+ "numeric_common_traits",
+]
+
+[[package]]
+name = "functional_properties"
+version = "0.1.0"
+source = "git+https://github.com/earth-metabolome-initiative/emi-monorepo/?branch=main#b86a60b746c9caef16a6f8aa80a8292d35117ed9"
+
+[[package]]
+name = "graph"
+version = "0.1.0"
+source = "git+https://github.com/earth-metabolome-initiative/emi-monorepo/?branch=main#b86a60b746c9caef16a6f8aa80a8292d35117ed9"
+dependencies = [
+ "algebra",
+ "common_traits",
+ "functional_properties",
+ "multi_ranged",
+ "num-traits",
+ "numeric_common_traits",
+ "sorted_vec",
+]
+
+[[package]]
+name = "iter_utils"
+version = "0.1.0"
+source = "git+https://github.com/earth-metabolome-initiative/emi-monorepo/?branch=main#b86a60b746c9caef16a6f8aa80a8292d35117ed9"
+
+[[package]]
+name = "lender"
+version = "0.3.2"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "3d82d5a5c23e4d70f79c4cdfaa1d0beb6b3c660080c05dafd236f0514ce51ba6"
+dependencies = [
+ "lender-derive",
+ "stable_try_trait_v2",
+]
+
+[[package]]
+name = "lender-derive"
+version = "0.1.2"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "556faf0c9adb22669a5f9f6b4ed804c8048d205dcd00fadd463affbb02931d26"
+dependencies = [
+ "proc-macro2",
+ "quote",
+ "syn",
+]
+
+[[package]]
+name = "multi_ranged"
+version = "0.1.0"
+source = "git+https://github.com/earth-metabolome-initiative/emi-monorepo/?branch=main#b86a60b746c9caef16a6f8aa80a8292d35117ed9"
+dependencies = [
+ "num-traits",
+]
+
+[[package]]
+name = "num-traits"
+version = "0.2.19"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "071dfc062690e90b734c0b2273ce72ad0ffa95f0c74596bc250dcfd960262841"
+dependencies = [
+ "autocfg",
+]
+
+[[package]]
+name = "numeric_common_traits"
+version = "0.1.0"
+source = "git+https://github.com/earth-metabolome-initiative/emi-monorepo/?branch=main#b86a60b746c9caef16a6f8aa80a8292d35117ed9"
+dependencies = [
+ "common_traits",
+ "num-traits",
+]
+
+[[package]]
+name = "proc-macro2"
+version = "1.0.101"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "89ae43fd86e4158d6db51ad8e2b80f313af9cc74f5c0e03ccb87de09998732de"
+dependencies = [
+ "unicode-ident",
+]
+
+[[package]]
+name = "quote"
+version = "1.0.41"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "ce25767e7b499d1b604768e7cde645d14cc8584231ea6b295e9c9eb22c02e1d1"
+dependencies = [
+ "proc-macro2",
+]
+
+[[package]]
+name = "serde"
+version = "1.0.228"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "9a8e94ea7f378bd32cbbd37198a4a91436180c5bb472411e48b5ec2e2124ae9e"
+dependencies = [
+ "serde_core",
+ "serde_derive",
+]
+
+[[package]]
+name = "serde_core"
+version = "1.0.228"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "41d385c7d4ca58e59fc732af25c3983b67ac852c1a25000afe1175de458b67ad"
+dependencies = [
+ "serde_derive",
+]
+
+[[package]]
+name = "serde_derive"
+version = "1.0.228"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "d540f220d3187173da220f885ab66608367b6574e925011a9353e4badda91d79"
+dependencies = [
+ "proc-macro2",
+ "quote",
+ "syn",
+]
+
+[[package]]
+name = "sorted_vec"
+version = "0.1.0"
+source = "git+https://github.com/earth-metabolome-initiative/emi-monorepo/?branch=main#b86a60b746c9caef16a6f8aa80a8292d35117ed9"
+dependencies = [
+ "common_traits",
+]
+
+[[package]]
+name = "stable_try_trait_v2"
+version = "1.75.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "1c4e48411f4db8ccca0470bfb67e3bb821af4227d455aa147917d8d109be0d13"
+
+[[package]]
+name = "syn"
+version = "2.0.106"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "ede7c438028d4436d71104916910f5bb611972c5cfd7f89b8300a8186e6fada6"
+dependencies = [
+ "proc-macro2",
+ "quote",
+ "unicode-ident",
+]
+
+[[package]]
+name = "unicode-ident"
+version = "1.0.19"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "f63a545481291138910575129486daeaf8ac54aee4387fe7906919f7830c7d9d"
